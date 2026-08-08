@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b2347">
+  <meta name="description" content="თარჯიმნის პროფესიული სტარტი — სერთიფიკატის ოფიციალური გადამოწმება">
+  <meta name="robots" content="index,follow">
+  <title>სერთიფიკატის გადამოწმება | თარჯიმნის პროფესიული სტარტი</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="page">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="მთავარი გვერდი">
+        <span class="brand-mark" aria-hidden="true"><span>TS</span></span>
+        <span class="brand-copy">
+          <strong>თარჯიმნის პროფესიული სტარტი</strong>
+          <small>Translator’s Professional Start</small>
+        </span>
+      </a>
+      <span class="header-label">OFFICIAL CERTIFICATE VERIFICATION</span>
+    </header>
+
+    <section class="hero">
+      <div class="kicker">ოფიციალური რეესტრი</div>
+      <h1>სერთიფიკატის ნამდვილობის<br class="desktop-break"> გადამოწმება</h1>
+      <p>შეიყვანეთ სერთიფიკატის უნიკალური ნომერი. QR კოდიდან გახსნის შემთხვევაში ნომერი ავტომატურად შემოწმდება.</p>
+    </section>
+
+    <section class="verify-card" aria-labelledby="verify-title">
+      <h2 id="verify-title" class="sr-only">სერთიფიკატის შემოწმება</h2>
+
+      <form id="verifyForm" class="lookup" novalidate>
+        <label class="input-wrap">
+          <span>სერთიფიკატის ნომერი</span>
+          <input
+            id="certId"
+            name="certId"
+            inputmode="text"
+            autocomplete="off"
+            autocapitalize="characters"
+            spellcheck="false"
+            placeholder="მაგ.: TS-2026-0001"
+            maxlength="64"
+            required>
+        </label>
+        <button id="verifyBtn" type="submit">
+          <span id="buttonText">გადამოწმება</span>
+          <span id="spinner" class="spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <p class="lookup-note">ნომერი შეიყვანეთ ზუსტად ისე, როგორც სერთიფიკატზეა მითითებული.</p>
+
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+    <section class="trust-row" aria-label="სანდოობის ინფორმაცია">
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <div><strong>ოფიციალური შემოწმება</strong><small>მონაცემები მოწმდება გაცემულ ჩანაწერთან</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">#</span>
+        <div><strong>უნიკალური ნომერი</strong><small>თითოეულ სერთიფიკატს აქვს საკუთარი იდენტიფიკატორი</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">QR</span>
+        <div><strong>QR გადამოწმება</strong><small>QR კოდი პირდაპირ ხსნის კონკრეტულ ჩანაწერს</small></div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 თარჯიმნის პროფესიული სტარტი</span>
+      <span class="footer-dot">•</span>
+      <span>Certificate Verification Registry</span>
+    </footer>
+  </main>
+
+  <noscript>
+    <div class="noscript">სერთიფიკატის გადასამოწმებლად საჭიროა JavaScript-ის ჩართვა.</div>
+  </noscript>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

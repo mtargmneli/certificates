@@ -1,0 +1,9 @@
+{
+  "name": "TS Certificate Verification",
+  "short_name": "TS Verify",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#0b2347",
+  "icons": []
+}
